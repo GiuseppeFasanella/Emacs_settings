@@ -1,19 +1,23 @@
 ;;//File Path: /home/gfasanel
-
 (font-lock-mode)
 ;; Things that I usually write are abbreviated like this
 (global-set-key (kbd "<f2>") "#! /bin/bash\n")
 (global-set-key (kbd "<f3>") "#! /usr/bin/python\n")
 (global-set-key (kbd "<f4>") "using namespace std;\n")
 ; keys calling my functions
-(global-set-key (kbd "<f5> g") 'make-graph)
-(global-set-key (kbd "<f5> c") 'make-canvas)
-(global-set-key (kbd "<f5> h") 'make-histo)
-(global-set-key (kbd "<f5> l") 'make-label)
+;;pyROOT
+(global-set-key (kbd "<f5> l") 'make-label-python)
+
+;;C++
+(global-set-key (kbd "<f5> G") 'make-graph)
+(global-set-key (kbd "<f5> C") 'make-canvas)
+(global-set-key (kbd "<f5> H") 'make-histo)
+(global-set-key (kbd "<f5> L") 'make-label)
 
 ;; SHELL commands
-(global-set-key (kbd "<f5> p") (lambda () (interactive) (insert "//File Path: ") (insert (shell-command-to-string "pwd"))))
+(global-set-key (kbd "<f5> P") (lambda () (interactive) (insert "//File Path: ") (insert (shell-command-to-string "pwd"))))
 ; equivalent to C-u M-! <shell-command> ;; it calls an anonymous function
+(global-set-key (kbd "<f5> p") (lambda () (interactive) (insert "##File Path: ") (insert (shell-command-to-string "pwd"))))
 
 ; Defining eLisp functions
 (defun make-graph (name)
@@ -31,6 +35,12 @@
   (interactive "sWhat's the name of the label? \nsX position (normalized)? \nsY position (normalized)? \nsWhat's the content of the label?  ")
   (insert (format "TLatex* %s = new TLatex(%s,%s,\"%s\");" name x y title))
   (insert (format "\n%s ->SetNDC();\n%s->Draw();\n" name name))
+)
+(defun make-label-python (name x y title)
+  "Creating a TLatex via M-x make-label-python"
+  (interactive "sWhat's the name of the label? \nsX position (normalized)? \nsY position (normalized)? \nsWhat's the content of the label?  ")
+  (insert (format "%s =ROOT.TLatex(%s,%s,\"%s\")" name x y title))
+  (insert (format "\n%s.SetNDC()\n%s.Draw()\n" name name))
 )
 
 (defun make-histo (name title bin xmin xmax)

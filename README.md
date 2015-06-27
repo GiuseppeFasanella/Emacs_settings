@@ -11,6 +11,7 @@ I customization settings di emacs si trovano in ~/.emacs
 * C-n new line
 
 **Navigare tra file aperti**
+
 * Apri un terminale e apri un file `emacs file.dat`
 * Dentro emancs, `C-x C-f` : apri un altro file (Tieni premuto Ctrl)
 * C-x f : Lista di file che hai aperto di recente (Ctrl-x e POI f)
@@ -18,6 +19,7 @@ I customization settings di emacs si trovano in ~/.emacs
 * C-x e poi k (kill del buffer)
 
 **Modalita' 2**
+
 *`C-x e poi 2 (oppure 3)` apre una sub-finestra in orizzontale o verticale
 * `C-x e poi o` ti sposta nella divisione che vuoi
 * Quando arrivi alla divisione che vuoi `C-x C-f` e apri un file li'

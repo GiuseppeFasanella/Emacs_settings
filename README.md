@@ -20,7 +20,7 @@ I customization settings di emacs si trovano in ~/.emacs
 
 **Modalita' 2**
 
-*`C-x e poi 2 (oppure 3)` apre una sub-finestra in orizzontale o verticale
+* `C-x e poi 2 (oppure 3)` apre una sub-finestra in orizzontale o verticale
 * `C-x e poi o` ti sposta nella divisione che vuoi
 * Quando arrivi alla divisione che vuoi `C-x C-f` e apri un file li'
 

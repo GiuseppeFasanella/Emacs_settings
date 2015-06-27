@@ -10,7 +10,7 @@ I customization settings di emacs si trovano in ~/.emacs
 
 * C-n new line
 
-**Navigare tra file aperti
+**Navigare tra file aperti**
 * Apri un terminale e apri un file `emacs file.dat`
 * Dentro emancs, `C-x C-f` : apri un altro file (Tieni premuto Ctrl)
 * C-x f : Lista di file che hai aperto di recente (Ctrl-x e POI f)

@@ -25,7 +25,8 @@ I customization settings di emacs si trovano in ~/.emacs
 * Quando arrivi alla divisione che vuoi `C-x C-f` e apri un file li'
 
 **Modalita' 3**
-*Lancia screen e in screen apri emacs (e' piu' comodo da navigare)
+
+* Lancia screen e in screen apri emacs (e' piu' comodo da navigare)
 * `C-a c` (create)
 * `C-a n` (next)
 * `C-a p` (previous)

@@ -16,7 +16,7 @@ I customization settings di emacs si trovano in ~/.emacs
 * Dentro emancs, `C-x C-f` : apri un altro file (Tieni premuto Ctrl)
 * C-x f : Lista di file che hai aperto di recente (Ctrl-x e POI f)
 * `C-x (tenuto premuto) e freccia` per spostarsi da un buffer all'altro (pure vero e' che emacs crea dei file suoi "scratch" e "Messages" e ti trovi a navigare pure quelli)
-* C-x e poi k (kill del buffer)
+* C-x e poi k (kill del buffer). Quando ti chiede se vuoi chiudere il buffer devi **solo premere invio**
 
 **Modalita' 2**
 

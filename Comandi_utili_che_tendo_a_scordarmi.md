@@ -1,4 +1,5 @@
 **Incolla rettangolare**: 
+
 `Ctrl spazio al vertice in alto al sinistra del futuro rettangolo`
 
 Raggiungi con il puntatore l'angolo in basso a destra del rettangolo
